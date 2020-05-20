@@ -21,7 +21,7 @@ exports.endOfMonth = function (year, month) {
 };
 
 exports.line = function (year, month, day) {
-  return dateFormat(new Date(year, month - 1, day), "[yyyy/mm/dd](ddd)");
+  return dateFormat(new Date(year, month - 1, day), "[yyyy/mm/dd](ddd) ");
 };
 
 exports.lines = function (year, month) {

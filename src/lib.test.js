@@ -1,13 +1,27 @@
 var _ = require("./lib");
 
 test("Dateオブジェクトのテスト", () => {
-  const date = new Date("2020/10/02");
-  expect(date.getFullYear()).toBe(2020);
-  expect(date.getMonth()).toBe(9);
-  expect(date.getDate()).toBe(2);
-  const date2 = new Date(2020, 4, 0); // monthは0始まり
-  expect(date2.getMonth()).toBe(3);
-  expect(date2.getDate()).toBe(30);
+  {
+    const date = new Date("2020/10/02");
+    expect(date.getFullYear()).toBe(2020);
+    expect(date.getMonth()).toBe(9);
+    expect(date.getDate()).toBe(2);
+  }
+  {
+    const date = new Date(2020, 4, 0); // monthは0始まり
+    expect(date.getMonth()).toBe(3);
+    expect(date.getDate()).toBe(30);
+  }
+  {
+    const date = new Date("2020-10");
+    expect(date.getMonth()).toBe(9);
+    expect(date.getDate()).toBe(1);
+  }
+  {
+    const date = new Date("2020/10");
+    expect(date.getMonth()).toBe(9);
+    expect(date.getDate()).toBe(1);
+  }
 });
 
 test("dateformatのテスト", () => {
@@ -41,11 +55,11 @@ test("該当月の最終日を取得する", () => {
 
 //
 test("日付から、１行を生成する", () => {
-  expect(_.line(2020, 5, 18)).toBe("[2020/05/18](月)");
+  expect(_.line(2020, 5, 18)).toBe("[2020/05/18](月) ");
 });
 
 test("日付から全体string[]を生成する", () => {
   expect(_.lines(2020, 2).length).toBe(29);
   expect(_.lines(2020, 5).length).toBe(31);
-  expect(_.lines(2020, 5)[17]).toBe("[2020/05/18](月)");
+  expect(_.lines(2020, 5)[17]).toBe("[2020/05/18](月) ");
 });
