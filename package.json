@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node src/server.js"
+    "dev": "node-dev src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "node-dev": "^4.0.0"
   },
   "dependencies": {
     "commander": "^5.1.0",
