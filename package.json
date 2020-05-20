@@ -1,7 +1,7 @@
 {
-  "name": "pamscraptools",
+  "name": "pam-scraptools",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scrapboxフォーマットの月次ページを生成",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -9,7 +9,7 @@
     "start": "now dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "Takafumi Tamura",
   "license": "ISC",
   "devDependencies": {
     "jest": "^26.0.1",
