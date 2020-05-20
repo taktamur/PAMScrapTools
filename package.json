@@ -1,20 +1,23 @@
 {
-  "name": "scrapdiary",
+  "name": "pamscraptools",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node ./src/main.js"
+    "dev": "node-dev src/server.js",
+    "start": "now dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "node-dev": "^4.0.0"
   },
   "dependencies": {
     "commander": "^5.1.0",
-    "dateformat": "^3.0.3"
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1"
   }
 }
