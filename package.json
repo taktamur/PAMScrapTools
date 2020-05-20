@@ -1,11 +1,12 @@
 {
-  "name": "scrapdiary",
+  "name": "pamscraptools",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node-dev src/server.js"
+    "dev": "node-dev src/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
