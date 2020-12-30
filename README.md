@@ -1,5 +1,7 @@
 # PAMScrapTools
-scrapbox.ioのツール類
+
+scrapbox.io のツール類
 
 # 月次ページの生成
-https://pam-scraptools.taktamur.now.sh/
+
+https://pam-scraptools.taktamur.vercel.app/
