@@ -12,8 +12,8 @@
   "author": "Takafumi Tamura",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.0.1",
-    "node-dev": "^4.0.0"
+    "jest": "^26.6.3",
+    "node-dev": "^4.3.0"
   },
   "dependencies": {
     "commander": "^5.1.0",

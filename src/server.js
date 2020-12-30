@@ -4,7 +4,8 @@ const app = express();
 
 function 月次ページ(today) {
   const days = _.lines(today.getFullYear(), today.getMonth() + 1);
-  return days.join("\n");
+  const ret = days.concat( ["----","https://github.com/taktamur/PAMScrapTools"]);
+  return ret.join("\n");
 }
 
 app.get("/", (req, res) => {
